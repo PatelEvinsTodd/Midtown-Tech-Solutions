@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
+from public.models import Article
 
 def index(request):
-    return HttpResponse("Mapped to me.")
+    context = {}
+    return render(request, 'public/base.html', context)
