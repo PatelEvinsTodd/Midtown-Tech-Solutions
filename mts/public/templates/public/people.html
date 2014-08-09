@@ -1,4 +1,22 @@
 {% extends 'public/base.html' %}
-
+(% load static %}
 {% block body %}
+<div class="container">
+  {% if people %}
+  <ul class="media-list">
+    {% for p in people %}
+    <li class="media">
+      <img class="pull-left media-object" src="" alt="image">
+      <div class="media-body">
+	<h4>{{ p.first_name }} {{ p.last_name }}</h4>
+	<h5>{{ p.position }}</h5>
+	<p>
+	  {{ p.bio }}
+	</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>
 {% endblock %}
