@@ -2,3 +2,12 @@
     border-bottom: 0 none;
     margin-bottom: 0;
 }
+
+.mts-docs-footer {
+    border-top: 1px solid #e5e5e5;
+    color: #777;
+    margin-top: 100px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
