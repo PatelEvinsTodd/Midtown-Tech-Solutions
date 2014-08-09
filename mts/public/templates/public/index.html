@@ -1,12 +1,38 @@
 {% extends 'public/base.html' %}
-
+{% load static %}
 {% block body %}
-<main class="bs-docs-masthead" role="main">
-  <div class="jumbotron">
-    <div class="container">
-      <h2>Welcome to MidtownTechSolutions.com</h2>
-      <p>We are techies who want to help you take your business to the next level.</p>
+<div id="mts-carousel" class="carousel slide" data-ride="carousel">
+  <!-- <ol class="carousel-indicators"> -->
+  <!--   <li data-target="#mts-carousel" data-slide-to="0" class="active"></li> -->
+  <!--   <li data-target="#mts-carousel" data-slide-to="1"></li> -->
+  <!--   <li data-target="#mts-carousel" data-slide-to="2"></li> -->
+  <!-- </ol> -->
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'img/memphis_bridge.jpg' %}" alt="bridge">
+      <div class="carousel-caption">
+	<h2>Welcome to MidtownTechSolutions.com!</h2>
+	<p class="lead">
+	  We are techies who want to help you take your business to the next level.
+	</p>
+      </div>
     </div>
   </div>
-</main>
+
+  <!-- <a class="left carousel-control" href="#mts-carousel" role="button" data-slide="prev"> -->
+  <!--   <span class="glyphicon glyphicon-chevron-left"></span> -->
+  <!-- </a> -->
+  <!-- <a class="right carousel-control" href="#mts-carousel" role="button" data-slide="next"> -->
+  <!--   <span class="glyphicon glyphicon-chevron-right"></span> -->
+  <!-- </a> -->
+</div>
+<!-- <main class="bs-docs-masthead" role="main"> -->
+<!--   <div class="jumbotron"> -->
+<!--     <div class="container"> -->
+<!--       <h2>Welcome to MidtownTechSolutions.com</h2> -->
+<!--       <p>We are techies who want to help you take your business to the next level.</p> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </main> -->
 {% endblock %}
