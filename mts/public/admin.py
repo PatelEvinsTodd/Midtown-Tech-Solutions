@@ -1,5 +1,5 @@
 from django.contrib import admin
-from public.models import Article
+from public.models import Article, Position, Worker
 
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'pub_date')
@@ -7,3 +7,5 @@ class ArticleAdmin(admin.ModelAdmin):
     search_fields = ['title']
 
 admin.site.register(Article, ArticleAdmin)
+admin.site.register(Position)
+admin.site.register(Worker)
