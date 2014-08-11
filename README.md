@@ -14,6 +14,6 @@ To install the required libraries, run this command at the top-level directory:
 
 To start a local development server, run this command in the mts directory:
 
-`python manage.py runserver`
+`$ python manage.py runserver`
 
 Go to localhost:8000 in your favorite web browser to view. Now get developing!
