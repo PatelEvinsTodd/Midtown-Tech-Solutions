@@ -12,7 +12,7 @@ To install the required libraries, run this command at the top-level directory:
 
 `$ pip install -r requirements.txt`
 
-To start a local development server, run this command in the mts directory:
+To start a local development server, run this command in the `mts` directory:
 
 `$ python manage.py runserver`
 
